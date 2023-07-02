@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+  <title>Reboot</title>
+  <meta name="description" content="">
+  
+  
+
+  <link rel="stylesheet" href="https://lanjian.io/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/css/nanogallery2.min.css" />
+</head>
+
+
+    <body>
+
+        
+
+        <div class="header-image-container">
+            <h1 class="andromeda-header-text">
+                <a href="https:&#x2F;&#x2F;lanjian.io">lanjian</a>
+            </h1>
+            <div class="header-image lozad" data-background-image="header.jpg" data-placeholder-background="darkgrey"></div>
+            <div class="text-container">
+                <h1 class="page-title">Reboot</h1>
+                <span class="page-description"></span>
+                <span class="page-date">2023&#x2F;06&#x2F;29</span>
+            </div>
+        </div>
+        <div class="body-container">
+            <h1 id="reboot">Reboot</h1>
+<p>I've been meaning to start a blog for a while, mainly as way to write about my
+travels and weekend wanderings. I have tons of photos saved that are just
+collecting dust. Occasionally I would post something on
+<a href="https://www.instagram.com/jackhxs/">Instagram</a> but I wanted something that was
+more flexible, where I can do some writing as well as showcase photos. I
+finally decided to stop being lazy and just do it. I briefly considered adding
+to my old <a href="https://lanjian.github.io">personal site</a>, but it's so old that I'd
+probably end up redoing it anyways. After looking through <a href="https://jamstack.org/generators">a list of static
+site generators</a>, I decided to make a new site
+using Zola since it's written in Rust.</p>
+<p>There is still much to do for the new site. I picked a theme geared towards
+photoblogging that had better support for images and galleries, but everything
+else looks kind of meh. I will probably make a lot of changes as I go. I also
+want to start making cinemagraphs and embed them into posts, which I haven't
+spent time on figuring out how to do yet. Given my propensity for perfectionism
+to the point of inaction, I thought it was best that I just start making posts
+even if I don't have everything figured out yet.</p>
+<h1 id="mendocino">Mendocino</h1>
+<p>After living in the Bay Area for many years, I feel like I've already been to
+most of the interesting places nearby that are feasible to visit on a
+motorcycle for a day trip. So recently, I started looking into farther places
+that I can ride to for weekend trips. </p>
+<p>For memorial day weekend, I decided to ride up north to Mendocino and Clear
+Lake. This is my first time riding north past Tomales Bay. Highway 1 northbound
+is just as nice as southbound, but with less people. Though the weather was
+very grey that day. First night was spent in Fort Bragg.</p>
+<div class="gallery">
+    <a href="PXL_20230528_034150936.jpg"></a>
+    <a href="PXL_20230528_001146997.jpg"></a>
+    <a href="PXL_20230528_031912665.jpg"></a>
+    <a href="PXL_20230528_042204504.jpg"></a>
+</div>
+<p>Glass beach was kind of overrated. It definitely did not look as colorful as
+the photos online. The pieces of glass are small and it looks like a lot of it
+has been picked off by tourists already. Mendocino was a nice little coastal
+town. It felt a little like Carmel, complete with upscale brunch spots and
+boutique stores.</p>
+<div class="gallery">
+    <a href="PXL_20230528_173207607.jpg"></a>
+    <a href="PXL_20230528_173534776.jpg"></a>
+    <a href="PXL_20230528_191512724.jpg"></a>
+    <a href="PXL_20230528_203918324.jpg"></a>
+</div>
+<h1 id="clear-lake">Clear Lake</h1>
+<div class="gallery full-width-gallery">
+    <a href="bike-train.jpg"></a>
+</div>
+<p>The ride from the coast inland to Clear Lake started out great, but it didn't
+take long before it started raining. I didn't have rain gear so there was no
+choice but to just power through it and take a hot shower afterwards. The hotel
+at <a href="https://www.featherbedrailroad.com/">Featherbed Railroad</a> was the highlight
+of the trip. It was a real train caboose turned into a room. There were 8
+cabooses in total, and each one is decorated in a different theme. The one I
+stayed at had a tropical island theme. Apparently they make something different
+each day of the week for breakfast, and this time it was homemade biscuits and
+gravy. It was a cool experience. I'm actually looking forward to going back sometime
+next year after they set up the dock with jet skis. </p>
+<div class="gallery">
+    <a href="PXL_20230529_001420356.jpg"></a>
+    <a href="PXL_20230529_021423905.jpg"></a>
+    <a href="PXL_20230529_035045957.jpg"></a>
+    <a href="PXL_20230529_165457636.jpg"></a>
+</div>
+
+        </div>
+        
+        
+
+        
+<div class="footer-black">
+  <div class="text-block">
+    
+    
+    
+  </div>
+</div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/jquery.nanogallery2.min.js"></script>
+<script>
+  // Add lazy loading to all elements
+  const elements = document.querySelectorAll('body *');
+  elements.forEach((element) => {
+    element.classList.add('lozad');
+    element.setAttribute('data-loaded', 'false')
+  });
+  const obs = lozad();
+  obs.observe();
+
+  // Center normal images
+  $("p").each( function(index, element) {
+    const items = $(this)[0].children;
+    if (items.length > 0 && items[0].tagName == 'IMG') {
+      $(this).css("text-align", "center");
+    }
+  } )
+
+  // Gallery setup
+  $(".gallery").each( function( index, element ) {
+    const items = $(this)[0].children.length;
+    if (items == 1) {
+      $(this).nanogallery2({
+        // GALLERY AND THUMBNAIL LAYOUT
+        //thumbnailHeight: 'auto', thumbnailWidth: $( window ).width(),
+        //thumbnailHeight: 600, thumbnailWidth: $( window ).width(),
+        thumbnailHeight: 600, thumbnailWidth: 2160,
+        //thumbnailHeight: 'auto', thumbnailWidth: 1400,
+        thumbnailBorderHorizontal: 0,
+        thumbnailBorderVertical: 0,
+        thumbnailAlignment: 'center',
+
+        // THUMBNAIL TOOLS & LABEL
+        thumbnailLabel: { display: false, position:'onBottom', hideIcons: true, titleFontSize: '1em', align: 'right', titleMultiLine:true, displayDescription: false},
+
+        // DISPLAY ANIMATION
+        thumbnailDisplayTransition: 'fadeIn',
+        thumbnailDisplayTransitionDuration: 500,
+        thumbnailDisplayInterval: 30,
+
+        // // THUMBNAIL'S HOVER ANIMATION
+        // thumbnailHoverEffect2: 'imageScaleIn90',
+        touchAnimation: true,
+        touchAutoOpenDelay: 800,
+
+        // DEEP LINKING
+        locationHash: false,
+
+        // VIEWER TOOLBAR CONFIG
+        viewerTools:    {
+          topLeft:    'pageCounter',
+          topRight:   'downloadButton, zoomButton, fullscreenButton, closeButton'
+        }   
+      })
+    } else if (items == 2) {
+        $(this).nanogallery2({
+
+          // GALLERY AND THUMBNAIL LAYOUT
+          galleryDisplayMode: 'fullContent',
+          // gallerySorting: 'random',
+          thumbnailHeight: '400', thumbnailWidth: 'auto',
+          thumbnailAlignment: 'center',
+          thumbnailBaseGridHeight: 100,
+          thumbnailL1GutterWidth: 4,
+          thumbnailL1GutterHeight: 4,
+          thumbnailBorderHorizontal: 0,
+          thumbnailBorderVertical: 0,
+
+          // THUMBNAIL TOOLS & LABEL
+          thumbnailLabel: { display: false, position:'onBottom', hideIcons: true, titleFontSize: '1em', align: 'right', titleMultiLine:true, displayDescription: false},
+          
+          // DISPLAY ANIMATION
+          thumbnailDisplayTransition: 'fadeIn',
+          thumbnailDisplayTransitionDuration: 500,
+          thumbnailDisplayInterval: 30,
+
+          // // THUMBNAIL'S HOVER ANIMATION
+          // thumbnailHoverEffect2: 'imageScaleIn90',
+          touchAnimation: true,
+          touchAutoOpenDelay: 800,
+          
+          // DEEP LINKING
+          locationHash: false,
+
+          // VIEWER TOOLBAR CONFIG
+          viewerTools:    {
+            topLeft:    'pageCounter',
+            topRight:   'downloadButton, zoomButton, fullscreenButton, closeButton'
+          }   
+      });
+    } else {
+      $(this).nanogallery2({
+        // GALLERY AND THUMBNAIL LAYOUT
+        galleryDisplayMode: 'fullContent',
+        // gallerySorting: 'random',
+        thumbnailHeight: '250', thumbnailWidth: 'auto',
+        thumbnailAlignment: 'center',
+        thumbnailBaseGridHeight: 100,
+        thumbnailL1GutterWidth: 4,
+        thumbnailL1GutterHeight: 4,
+        thumbnailBorderHorizontal: 0,
+        thumbnailBorderVertical: 0,
+
+        // THUMBNAIL TOOLS & LABEL
+        thumbnailLabel: { display: false, position:'onBottom', hideIcons: true, titleFontSize: '1em', align: 'right', titleMultiLine:true, displayDescription: false},
+
+        // DISPLAY ANIMATION
+        thumbnailDisplayTransition: 'fadeIn',
+        thumbnailDisplayTransitionDuration: 500,
+        thumbnailDisplayInterval: 30,
+
+        // // THUMBNAIL'S HOVER ANIMATION
+        // thumbnailHoverEffect2: 'imageScaleIn90',
+        touchAnimation: true,
+        touchAutoOpenDelay: 800,
+
+        // DEEP LINKING
+        locationHash: false,
+
+        // VIEWER TOOLBAR CONFIG
+        viewerTools:    {
+          topLeft:    'pageCounter',
+          topRight:   'downloadButton, zoomButton, fullscreenButton, closeButton'
+        }
+      });
+    }
+  });
+</script>
+<!-- Math rendering -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [ ['$$','$$'] ]}});
+</script>
+
+
+    </body>
+
+</html>
