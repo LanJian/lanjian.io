@@ -16,7 +16,7 @@ finally decided to stop being lazy and just do it. I briefly considered adding
 to my old [personal site](https://lanjian.github.io), but it's so old that I'd
 probably end up redoing it anyways. After looking through [a list of static
 site generators](https://jamstack.org/generators), I decided to make a new site
-using Zola since it's written in Rust.
+using [Zola](https://www.getzola.org/) since it's written in Rust.
 
 There is still much to do for the new site. I picked a theme geared towards
 photoblogging that had better support for images and galleries, but everything
@@ -25,6 +25,14 @@ want to start making cinemagraphs and embed them into posts, which I haven't
 spent time on figuring out how to do yet. Given my propensity for perfectionism
 to the point of inaction, I thought it was best that I just start making posts
 even if I don't have everything figured out yet.
+
+**Update 2023-07-05**: I ended up switching to [Hugo](https://gohugo.io/) since
+I wasn't completely satisfied with the Zola theme. Since Zola is newer, there
+is a limited selections of theme to choose from. I'm a lot happier with the
+Blowfish theme for Hugo, which is a lot more mature and had more features than
+the themes I've tried for Zola. Switching to Hugo itself was pretty painless,
+though I did spend quite a long time extending the theme to be able to display
+[full-width images](#clear-lake) with my limited frontend skills. 
 
 ## Mendocino
 
