@@ -27,8 +27,8 @@ to the point of inaction, I thought it was best that I just start making posts
 even if I don't have everything figured out yet.
 
 **Update 2023-07-05**: I ended up switching to [Hugo](https://gohugo.io/) since
-I wasn't completely satisfied with the Zola theme. Since Zola is newer, there
-is a limited selections of theme to choose from. I'm a lot happier with the
+I wasn't completely satisfied with the Zola theme. There is a limited selection
+of Zola themes to choose from because It's newer. I'm a lot happier with the
 Blowfish theme for Hugo, which is a lot more mature and had more features than
 the themes I've tried for Zola. Switching to Hugo itself was pretty painless,
 though I did spend quite a long time extending the theme to be able to display
