@@ -29,7 +29,7 @@ smartTOC = true
 
 [footer]
   showMenu = true
-  showCopyright = true
+  showCopyright = false
   showThemeAttribution = true
   showAppearanceSwitcher = true
   showScrollToTop = true
