@@ -11,35 +11,41 @@ body {
 }
 
 .full-width img {
-  max-width: 105vw;
+  max-width: 102vw;
   max-height: 60vh;
-  width: 105vw;
+  width: 102vw;
   object-fit: cover;
   position: relative;
-  margin: 0 calc(50% - 50vw);
   border-radius: 0;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 640px) {
   .full-width img {
-    left: 0%;
+    left: -1.5em;
   }
 }
 
-@media (min-width: 950px) and (max-width: 1024px) {
+@media (min-width: 640px) and (max-width: 853px) {
   .full-width img {
-    left: 5%;
+    left: -3.5em;
+  }
+}
+
+@media (min-width: 853px) and (max-width: 1024px) {
+  .full-width img {
+    left: -6em;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1300px) {
   .full-width img {
-    left: 18%;
+    left: -8.6em;
   }
 }
 
 @media (min-width: 1300px) {
   .full-width img {
-    left: 28%;
+    margin: 0 -50vw;
+    left: 32em;
   }
 }
