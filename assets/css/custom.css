@@ -2,15 +2,11 @@ body {
   overflow-x: hidden;
 }
 
-.medium-zoom-image--opened {
-  object-fit: contain;
-}
-
 .toc {
   z-index: 1;
 }
 
-.full-width img {
+img.full-width {
   max-width: 102vw;
   max-height: 60vh;
   width: 102vw;
@@ -20,31 +16,31 @@ body {
 }
 
 @media (max-width: 640px) {
-  .full-width img {
+  img.full-width {
     left: -1.5em;
   }
 }
 
 @media (min-width: 640px) and (max-width: 853px) {
-  .full-width img {
+  img.full-width {
     left: -3.5em;
   }
 }
 
 @media (min-width: 853px) and (max-width: 1024px) {
-  .full-width img {
+  img.full-width {
     left: -6em;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1300px) {
-  .full-width img {
+  img.full-width {
     left: -8.6em;
   }
 }
 
 @media (min-width: 1300px) {
-  .full-width img {
+  img.full-width {
     margin: 0 -50vw;
     left: 32em;
   }

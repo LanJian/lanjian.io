@@ -1,0 +1,25 @@
+{{- $url := urls.Parse (.Get "src") }}
+{{- $altText := .Get "alt" }}
+{{- $class := .Get "class" }}
+
+{{- $resource := "" }}
+{{- if $.Page.Resources.GetMatch ($url.String) }}
+  {{- $resource = $.Page.Resources.GetMatch ($url.String) }}
+{{- else if resources.GetMatch ($url.String) }}
+  {{- $resource = resources.Get ($url.String) }}
+{{- end }}
+
+{{- with $resource }}
+  <img
+    class="{{ with $class }} {{ . }}{{ end }}"
+    srcset="
+    {{ (.Resize "330x").RelPermalink }} 330w,
+    {{ (.Resize "660x").RelPermalink }} 660w,
+    {{ (.Resize "1024x").RelPermalink }} 1024w,
+    {{ (.Resize "1320x").RelPermalink }} 1320w,
+    {{ (.Resize "1920x").RelPermalink }} 2x"
+    src="{{ (.Resize "660x").RelPermalink }}"
+    data-zoom-src="{{ .RelPermalink }}"
+    alt="{{ $altText }}"
+  />
+{{- end }}
