@@ -15,8 +15,7 @@ title = "lanjian"
 
 [author]
   name = "Jack Huang"
-  #image = "img/blowfish_logo.png"
-  image = "img/vaporwave-biker.jpg"
+  image = "img/vaporwave-biker.webp"
   #headline = "I'm only human"
   #bio = "A little bit about you"
   links = [

@@ -15,9 +15,9 @@ enableCodeCopy = false
 # mainSections = ["section1", "section2"]
 # robots = ""
 
-disableImageOptimization = true
+disableImageOptimization = false
 
-# defaultBackgroundImage = "IMAGE.jpg" # used as default for background images 
+# defaultBackgroundImage = "IMAGE.jpg" # used as default for background images
 # defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
 
 highlightCurrentMenuArea = true
@@ -36,7 +36,7 @@ smartTOC = true
 
 [homepage]
   layout = "hero" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "/img/homepage-hero.jpg" # used in: hero, and card
+  homepageImage = "/img/homepage-hero.webp" # used in: hero, and card
   showRecent = true
   showRecentItems = 5
   showMoreLink = false
